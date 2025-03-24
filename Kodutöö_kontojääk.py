@@ -15,7 +15,12 @@ summa = float(input("Sisesta summa: "))
 uus_saldo = pangakonto(saldo, toiming, summa)
 print("Konto jääk:", uus_saldo) 
 
-
+while True:
+    if toiming == "sisse":
+        print(f"Kontojääk: {algne_saldo+summa}" + " €") 
+    elif toiming == "valja":
+        print(f"Kontojääk: {algne_saldo-summa}" + " €")      
+    break
   
    
 
